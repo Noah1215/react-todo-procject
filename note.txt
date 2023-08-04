@@ -1,0 +1,12 @@
+!! What I learned !!
+
+1. Context (createContext, useContext, Provider)
+- State should be held by the highest parent component in the stack that requires access to the state.
+- Unless using context, the top component should pass states as props to the bottom, which is called 'prop drilling'
+- UseContext can share state between deeply nested components more easily than with alone.
+
+2. useEffect
+- Components automatically re-render whenever there is a change in their state or props.
+- Using useEffect, components are rendered only once when the components has mounted if empty array is passed as a second argument.
+- If passing specific props or state as a second argument, useEffect runs specific logic only when second arguments have been updated.
+(https://ko.legacy.reactjs.org/docs/hooks-reference.html#useeffect)
